@@ -134,36 +134,8 @@
 						<h2>Cadastros</h2>
 					</div>
 				</div>
-				<form action="">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Placa">
-									</div>
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Email">
-									</div>
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Phone">
-									</div>
-								</div>
-								<div class="col-md-6">
-									<!-- <div class="form-group">
-										<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-									</div> -->
-									<div class="form-group">
-										<input type="button" class="btn btn-primary btn-md" value="Registrar">
-									</div>
-								</div>			
-							</div>
-						</div>	
-					</div>
-                    
-                    
-				</form>
 
+				<!-- Cadastro Usuários-->
                 <div class="card">
                     <div class="card-header" id="headingTwo">
                       <h5 class="mb-0">
@@ -176,9 +148,16 @@
                       <div class="card-body">
                         <form action="">
                           <div class="row">
-                            <div class="col">
-                              <input type="text" class="form-control" id="codigo_quarto" placeholder="Código do Quarto">
+                            <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Usuário">
                             </div>
+							<div class="form-group">
+								<select name="" id="" class="form-control">
+									<option value="" hidden>Permissão</option>
+									<option value="">Caixa</option>
+									<option value="">Gerência</option>
+								</select>
+							</div>
                           </div>
             
                           <div class="row">
@@ -186,13 +165,98 @@
                                 <input type="button" class="btn btn-success" value="Salvar">
                               </div>
                               <div class="col">
-                                <input type="button" class="btn btn-danger" value="Excluir">
+                                <input type="button" class="btn btn-danger" value="Limpar">
                               </div>
                           </div>            
                         </form>
                       </div>
                     </div>
-                  </div>
+                </div>
+
+				<!-- Cadastro Mensalistas-->
+				<div class="card">
+                    <div class="card-header" id="headingDois">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseDois" aria-expanded="false" aria-controls="collapseDois">
+                          Cadastro de Mensalistas
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseDois" class="collapse" aria-labelledby="headingDois" data-parent="#accordion">
+                      <div class="card-body">
+                        <form action="">
+                          <div class="row">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Nome">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Placa">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Valor">
+							</div>
+							<div class="form-group">
+								<input type="date" class="form-control" placeholder="Data de pagamento">
+							</div>
+                          </div>
+            
+                          <div class="row">
+                              <div class="col">
+                                <input type="button" class="btn btn-success" value="Salvar">
+                              </div>
+                              <div class="col">
+                                <input type="button" class="btn btn-danger" value="Limpar">
+                              </div>
+                          </div>            
+                        </form>
+                      </div>
+                    </div>
+                </div>
+
+				<!-- Cadastro Tabela de Preços-->
+				<div class="card">
+                    <div class="card-header" id="headingTres">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTres" aria-expanded="false" aria-controls="collapseTres">
+                          Cadastro de Tabela de Preços
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTres" class="collapse" aria-labelledby="headingTres" data-parent="#accordion">
+                      <div class="card-body">
+                        <form action="">
+                          <div class="row">
+							<div class="form-group">
+								
+								<select name="" id="" class="form-control">
+									<option value="" hidden>Veículos</option>
+									<option value="">Carro Grande</option>
+									<option value="">Carro Pequeno</option>
+									<option value="">Moto</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Valor Hora">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Valor Fração">
+							</div>
+                          </div>
+            
+                          <div class="row">
+                              <div class="col">
+                                <input type="button" class="btn btn-success" value="Salvar">
+                              </div>
+                              <div class="col">
+                                <input type="button" class="btn btn-danger" value="Limpar">
+                              </div>
+                          </div>            
+                        </form>
+                      </div>
+                    </div>
+                </div>
+
+
 			</div>
 			<!-- <div id="map"></div>	 -->
 		</div>

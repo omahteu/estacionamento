@@ -1165,3 +1165,9 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.tarja {
+  background-color: #228896;
+  border: 2px solid #000;
+  border-radius: 500px;
+}

@@ -67,12 +67,12 @@
 		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
 		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
 
-			<h1 id="fh5co-logo"><a href="../index.html">Menu</a></h1>
+			<h1 id="fh5co-logo"><a href="index.html">Menu</a></h1>
 			<nav id="fh5co-main-menu" role="navigation">
 				<ul>
-					<li><a href="../index.html" class="tarja">Entradas</a></li>
-					<li><a href="cadastros.html" class="tarja">Cadastros</a></li>
-					<li><a href="caixa.html" class="tarja">Caixa</a></li>
+					<li><a href="index.html" class="tarja">Entradas</a></li>
+					<li><a href="#" class="tarja">Cadastros</a></li>
+					<li><a href="#" class="tarja">Caixa</a></li>
 					<li><a href="#" class="tarja">Relatórios</a></li>
 					<li><a href="#" class="tarja">Sair</a></li>
 				</ul>
@@ -146,29 +146,26 @@
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                       <div class="card-body">
-                        <form action="">
-                          <div class="row">
-                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Usuário">
-                            </div>
-							<div class="form-group">
-								<select name="" id="" class="form-control">
-									<option value="" hidden>Permissão</option>
-									<option value="">Caixa</option>
-									<option value="">Gerência</option>
-								</select>
-							</div>
-                          </div>
-            
-                          <div class="row">
-                              <div class="col">
-                                <input type="button" class="btn btn-success" value="Salvar">
-                              </div>
-                              <div class="col">
-                                <input type="button" class="btn btn-danger" value="Limpar">
-                              </div>
-                          </div>            
-                        </form>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Veículo</th>
+                                    <th>Placa</th>
+                                    <th>Tipo</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Carro Pequeno</td>
+                                    <td>ACB1D23</td>
+                                    <td>Por Hora</td>
+                                    <td>R$ 8.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
                       </div>
                     </div>
                 </div>
@@ -196,8 +193,7 @@
 								<input type="text" class="form-control" placeholder="Valor">
 							</div>
 							<div class="form-group">
-								<label>Data Vencimento Mensalidade</label>
-								<input placeholder="" class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')">
+								<input placeholder="Data de Vencimento Mensalidade" class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')">
 							</div>
                           </div>
             
@@ -230,14 +226,6 @@
 							<div class="form-group">
 								
 								<select name="" id="" class="form-control">
-									<option value="" hidden>Ultilizar Fração</option>
-									<option value="">Sim</option>
-									<option value="">Não</option>
-								</select>
-							</div>
-							<div class="form-group">
-								
-								<select name="" id="" class="form-control">
 									<option value="" hidden>Veículos</option>
 									<option value="">Carro Grande</option>
 									<option value="">Carro Pequeno</option>
@@ -246,9 +234,6 @@
 							</div>
 							<div class="form-group">
 								<input type="text" class="form-control" placeholder="Valor Hora">
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Valor Diária">
 							</div>
 							<div class="form-group">
 								<input type="text" class="form-control" placeholder="Valor Fração">

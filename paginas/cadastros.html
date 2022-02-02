@@ -44,18 +44,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 	
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="../css/animate.css">
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="../css/icomoon.css">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
 	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="../css/flexslider.css">
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/style.css">
 
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="../js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -71,7 +71,7 @@
 			<nav id="fh5co-main-menu" role="navigation">
 				<ul>
 					<li><a href="index.html" class="tarja">Entradas</a></li>
-					<li><a href="paginas/cadastros.html" class="tarja">Cadastros</a></li>
+					<li><a href="#" class="tarja">Cadastros</a></li>
 					<li><a href="#" class="tarja">Caixa</a></li>
 					<li><a href="#" class="tarja">Relatórios</a></li>
 					<li><a href="#" class="tarja">Sair</a></li>
@@ -131,7 +131,7 @@
 				
 				<div class="row">
 					<div class="col-md-4">
-						<h2>Entradas</h2>
+						<h2>Cadastros</h2>
 					</div>
 				</div>
 				<form action="">
@@ -142,12 +142,12 @@
 									<div class="form-group">
 										<input type="text" class="form-control" placeholder="Placa">
 									</div>
-									<!-- <div class="form-group">
+									<div class="form-group">
 										<input type="text" class="form-control" placeholder="Email">
 									</div>
 									<div class="form-group">
 										<input type="text" class="form-control" placeholder="Phone">
-									</div> -->
+									</div>
 								</div>
 								<div class="col-md-6">
 									<!-- <div class="form-group">
@@ -160,29 +160,61 @@
 							</div>
 						</div>	
 					</div>
+                    
+                    
 				</form>
+
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Cadastro de Usuários
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body">
+                        <form action="">
+                          <div class="row">
+                            <div class="col">
+                              <input type="text" class="form-control" id="codigo_quarto" placeholder="Código do Quarto">
+                            </div>
+                          </div>
+            
+                          <div class="row">
+                              <div class="col">
+                                <input type="button" class="btn btn-success" value="Salvar">
+                              </div>
+                              <div class="col">
+                                <input type="button" class="btn btn-danger" value="Excluir">
+                              </div>
+                          </div>            
+                        </form>
+                      </div>
+                    </div>
+                  </div>
 			</div>
 			<!-- <div id="map"></div>	 -->
 		</div>
 	</div>
 
 	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
+	<script src="../js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="../js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="../js/jquery.waypoints.min.js"></script>
 	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="../js/jquery.flexslider-min.js"></script>
 	<!-- Google Map -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
+	<script src="../js/google_map.js"></script>
 	
 	
 	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
+	<script src="../js/main.js"></script>
 
 	</body>
 </html>

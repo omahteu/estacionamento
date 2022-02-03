@@ -13,7 +13,7 @@ function criandoInput() {
     elemento.setAttribute('type', 'text')
     elemento.setAttribute('id', 'placas' + contador)
     elemento.setAttribute('class', 'form-control')
-    elemento.setAttribute('placeholder', 'Placad')
+    elemento.setAttribute('placeholder', 'Placa' + contador)
 
     box.appendChild(elemento)
 }

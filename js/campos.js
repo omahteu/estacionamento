@@ -1,8 +1,9 @@
+var btn_add = document.getElementById('add')
 var box = document.getElementById('box')
 
 var contador = 1
 
-$("#add").click(function(){
+btn_add.addEventListener('click', function() {
     contador++
     criandoInput()
 })

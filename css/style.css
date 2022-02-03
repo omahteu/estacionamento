@@ -1171,3 +1171,16 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   border: 2px solid #000;
   border-radius: 500px;
 }
+
+.tarjaVerde {
+  background-color: #4cae4c;
+  border: 2px solid #000;
+  width: 115px;
+  height: 50px;
+  margin-bottom: 2px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: whitesmoke;
+  border-radius: 500px;
+}

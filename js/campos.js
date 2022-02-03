@@ -11,6 +11,7 @@ function criandoInput() {
     var elemento = document.createElement('input')
     elemento.setAttribute('type', 'text')
     elemento.setAttribute('id', 'placas' + contador)
+    elemento.setAttribute('class', 'form-control')
     elemento.setAttribute('placeholder', 'Placad')
 
     box.appendChild(elemento)

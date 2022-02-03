@@ -1,7 +1,17 @@
-$("#teste").click(function(){
-    var campo = document.getElementById(placas)
-    campo.innerHTML = ''
-    campo.innerHTML += '<div class="form-group" id="placas">'+
-                        '<input type="text" class="form-control" placeholder="Placa">'+
-                        '</div>'
+var box = document.getElementById('box')
+
+var contador = 1
+
+$("#add").click(function(){
+    contador++
+    criandoInput()
 })
+
+function criandoInput() {
+    var elemento = document.createElement('input')
+    elemento.setAttribute('type', 'text')
+    elemento.setAttribute('id', 'placas' + contador)
+    elemento.setAttribute('placeholder', 'Placad')
+
+    box.appendChild(elemento)
+}

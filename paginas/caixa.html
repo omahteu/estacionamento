@@ -131,90 +131,49 @@
 				
 				<div class="row">
 					<div class="col-md-4">
-						<h2>Cadastros</h2>
+						<h2>Caixa</h2>
 					</div>
 				</div>
 
 				<!-- Cadastro Usuários-->
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Cadastro de Usuários
-                        </button>
-                      </h5>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                      <div class="card-body">
-                        <form action="">
-                          <div class="row">
-                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Usuário">
-                            </div>
-							<div class="form-group">
-								<select name="" id="" class="form-control">
-									<option value="" hidden>Permissão</option>
-									<option value="">Caixa</option>
-									<option value="">Gerência</option>
-								</select>
-							</div>
-                          </div>
-            
-                          <div class="row">
-                              <div class="col">
-                                <input type="button" class="btn btn-success" value="Salvar">
-                              </div>
-                              <div class="col">
-                                <input type="button" class="btn btn-danger" value="Limpar">
-                              </div>
-                          </div>            
-                        </form>
-                      </div>
-                    </div>
-                </div>
+				<div class="card-body">
+	
+					<div class="row">
+						<div class="col">
+						<input type="button" class="tarjaVerdeCaixa" value="Abrir Caixa">
+						</div>
+						<div class="col">
+						<input type="button" class="tarjaVermelhaCaixa" value="Fechar Caixa">
+						</div>
+					</div>            
+			
+				</div>
 
 				<!-- Cadastro Mensalistas-->
-				<div class="card">
-                    <div class="card-header" id="headingDois">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseDois" aria-expanded="false" aria-controls="collapseDois">
-                          Cadastro de Mensalistas
-                        </button>
-                      </h5>
+
+                    <div class="card-body">
+
+						<table class="table">
+							<thead>
+								<tr>
+									<th>Usuário</th>
+									<th>Abertura</th>
+									<th>Fechamento</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Matheus</td>
+									<td>13:02 - 02/02/2022</td>
+									<td>18:00 - 02/02/2022</td>
+								</tr>
+							</tbody>
+						</table>
+                      
                     </div>
-                    <div id="collapseDois" class="collapse" aria-labelledby="headingDois" data-parent="#accordion">
-                      <div class="card-body">
-                        <form action="">
-                          <div class="row">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Nome">
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Placa">
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Valor">
-							</div>
-							<div class="form-group">
-								<input placeholder="Data de Vencimento Mensalidade" class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')">
-							</div>
-                          </div>
-            
-                          <div class="row">
-                              <div class="col">
-                                <input type="button" class="btn btn-success" value="Salvar">
-                              </div>
-                              <div class="col">
-                                <input type="button" class="btn btn-danger" value="Limpar">
-                              </div>
-                          </div>            
-                        </form>
-                      </div>
-                    </div>
-                </div>
 
 				<!-- Cadastro Tabela de Preços-->
-				<div class="card">
+				<!--<div class="card">
                     <div class="card-header" id="headingTres">
                       <h5 class="mb-0">
                         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTres" aria-expanded="false" aria-controls="collapseTres">
@@ -253,7 +212,7 @@
                           </div>            
                         </form>
                       </div>
-                    </div>
+                    </div>-->
                 </div>
 
 

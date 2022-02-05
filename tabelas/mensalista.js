@@ -19,7 +19,6 @@ $("#registrar").click(function(){
     var placa = $("#placa").val()
     var dt = dataHora()
     if(placas.includes(placa)) {
-        //console.log(placa + "Mensalista" + dt)
 
         var dado = {
             placa: placa,
@@ -39,6 +38,16 @@ $("#registrar").click(function(){
 
         alert("Veículo Registrado!")
 
+        document.getElementById('registroPlacas').reset()
+
+    }
+
+    if(placas.includes(placa) === false) {
+        
+        alert("Veículo não é mensalissta, escolha uma tabela!")
+
+        $("#tabelaCarroNovo").css('visibility', 'visible')
+                             
     }
 
 })

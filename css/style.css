@@ -1223,3 +1223,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   color: whitesmoke;
   border-radius: 500px;
 }
+
+#tabelaCarroNovo {
+  visibility: hidden;
+}

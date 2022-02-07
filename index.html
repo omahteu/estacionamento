@@ -119,12 +119,65 @@
 										<input type="text" class="form-control" id="placa" placeholder="Placa" style="text-transform:uppercase">
 									</div>
 									<div class="form-group" id="tabelaCarroNovo">
-										<select name="" id="" class="form-control">
-											<option value="">Diária C/ Fração</option>
-											<option value="">Por Hora C/ Fração</option>
-											<option value="">Por Hora S/ Fração</option>
-											<option value="">Por Hora S/ Fração</option>
+										<select name="" id="tipoVeiculo" class="form-control">
+											<option value="" hidden>Veículo</option>
+											<option value="cg">Carro Grande</option>
+											<option value="cp">Carro Pequeno</option>
+											<option value="mt">Moto</option>
 										</select>
+
+										<div class="card">
+											<div class="card-header" id="headingAjustes">
+												<h5 class="mb-0">
+													<button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseAjustes"
+														aria-expanded="false" aria-controls="collapseAjustes">
+														Ajustes de Tabela de Preços
+													</button>
+												</h5>
+											</div>
+											<div id="collapseAjustes" class="collapse" aria-labelledby="headingAjustes" data-parent="#accordion">
+												<div class="card-body">
+													<form>
+														<div class="row">
+															<div class="form-group">
+																<select name="" id="usafracao" class="form-control">
+																	<option value="" hidden>Ultilizar Fração</option>
+																	<option value="sim">Sim</option>
+																	<option value="nao">Não</option>
+																</select>
+															</div>
+															<div class="form-group">
+						
+																<select name="" id="tamanhoVeiculos" class="form-control">
+																	<option value="" hidden>Veículos</option>
+																	<option value="cg">Carro Grande</option>
+																	<option value="cp">Carro Pequeno</option>
+																	<option value="mt">Moto</option>
+																</select>
+															</div>
+															<div class="form-group">
+																<input type="text" class="form-control" id="valorHora" placeholder="Valor Hora">
+															</div>
+															<div class="form-group">
+																<input type="text" class="form-control" id="valorDiaria" placeholder="Valor Diária">
+															</div>
+															<div class="form-group">
+																<input type="text" class="form-control" id="valorFracao" placeholder="Valor Fração">
+															</div>
+														</div>
+						
+														<!-- <div class="row">
+															<div class="col">
+																<input type="button" id="registraPreco" class="tarjaVerde" value="Salvar">
+															</div>
+															<div class="col">
+																<input type="button" onclick="limpar()" class="tarjaVermelha" value="Limpar">
+															</div>
+														</div> -->
+													</form>
+												</div>
+											</div>
+										</div>
 									</div>
 									<!-- <div class="form-group">
 										<input type="text" class="form-control" placeholder="Phone">
@@ -166,6 +219,7 @@
 	<script src="js/main.js"></script>
 
 	<script src="tabelas/mensalista.js"></script>
+	<script src="tabelas/ajustes.js"></script>
 
 	</body>
 </html>

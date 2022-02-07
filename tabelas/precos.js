@@ -11,12 +11,33 @@ $('#usafracao').change(function() {
 
 
 $("#registraPreco").click(function(){
-    // var usafracao = $("#usafracao").val()
+    
     var tamanhoVeiculos = $("#tamanhoVeiculos").val()
     var valorHora = $("#valorHora").val()
     var valorDiaria = $("#valorDiaria").val()
     var valorFracao = $("#valorFracao").val()
-    console.log(valorFracao)
+    
+    var dado = {
+        tamanhoVeiculos: tamanhoVeiculos,
+        valorHora: valorHora,
+        valorDiaria: valorDiaria,
+        valorFracao: valorFracao,
+    }
+
+    if(localStorage.getItem('tabelaPrecos') === null){
+        var dados = [];
+        dados.push(dado);
+        localStorage.setItem('tabelaPrecos', JSON.stringify(dados));
+    } else {
+        var dados = JSON.parse(localStorage.getItem('tabelaPrecos'));
+        dados.push(dado);
+        localStorage.setItem('tabelaPrecos', JSON.stringify(dados));
+    }
+
+    alert("Tabela Registrada!")
+
+    document.getElementById('formTabelaPrecos').reset()
+
 })
 
 function limpar() {

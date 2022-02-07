@@ -57,8 +57,109 @@
 					</div>
 				</div>
 
+				<form action="">
+					<div class="row">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Usuário">
+						</div>
+						<div class="form-group">
+							<select name="" id="" class="form-control">
+								<option value="" hidden>Permissão</option>
+								<option value="">Caixa</option>
+								<option value="">Gerência</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<input type="button" class="tarjaVerde" value="Salvar">
+						</div>
+						<div class="col">
+							<input type="button" class="tarjaVermelha" value="Limpar">
+						</div>
+					</div>
+				</form>
+
+				<h1 hidden>Asd</h1>
+				<h2>Cadastro Mensalistas</h2>
+
+				<form action="">
+					<div class="row">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Nome">
+						</div>
+						<div class="form-group" id="placas">
+							<input type="text" class="form-control" placeholder="Placa">
+						</div>
+						<div id="box" class="form-group">
+
+						</div>
+						<button type="button" id="add" class="add">+ Placa</button>
+						<!-- <div class="form-group">
+					<input type="text" class="form-control" placeholder="Valor">
+				</div> -->
+
+						<div class="form-group">
+							<label>Data Vencimento Mensalidade</label>
+							<input type="number" class="form-control" name="" id="" min="0" max="31">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<input type="button" class="tarjaVerde" value="Salvar">
+						</div>
+						<div class="col">
+							<input type="button" class="tarjaVermelha" value="Limpar">
+						</div>
+					</div>
+				</form>
+
+				<h1>fdsf</h1>
+				
+
+				<form id="formTabelaPrecos">
+					<div class="row">
+						<div class="form-group">
+							<select name="" id="usafracao" class="form-control">
+								<option value="" hidden>Ultilizar Fração</option>
+								<option value="sim">Sim</option>
+								<option value="nao">Não</option>
+							</select>
+						</div>
+						<div class="form-group">
+
+							<select name="" id="tamanhoVeiculos" class="form-control">
+								<option value="" hidden>Veículos</option>
+								<option value="cg">Carro Grande</option>
+								<option value="cp">Carro Pequeno</option>
+								<option value="mt">Moto</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="valorHora" placeholder="Valor Hora">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="valorDiaria" placeholder="Valor Diária">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="valorFracao" placeholder="Valor Fração">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<input type="button" id="registraPreco" class="tarjaVerde" value="Salvar">
+						</div>
+						<div class="col">
+							<input type="button" onclick="limpar()" class="tarjaVermelha" value="Limpar">
+						</div>
+					</div>
+				</form>
+
 				<!-- Cadastro Usuários-->
-				<div class="card">
+				<!-- <div class="card">
 					<div class="card-header" id="headingTwo">
 						<h5 class="mb-0">
 							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
@@ -94,10 +195,10 @@
 							</form>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 				<!-- Cadastro Mensalistas-->
-				<div class="card">
+				<!-- <div class="card">
 					<div class="card-header" id="headingDois">
 						<h5 class="mb-0">
 							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseDois"
@@ -120,9 +221,9 @@
 
 									</div>
 									<button type="button" id="add" class="add">+ Placa</button>
-									<!-- <div class="form-group">
+									<div class="form-group">
 								<input type="text" class="form-control" placeholder="Valor">
-							</div> -->
+							</div>
 
 									<div class="form-group">
 										<label>Data Vencimento Mensalidade</label>
@@ -141,10 +242,10 @@
 							</form>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 				<!-- Cadastro Tabela de Preços-->
-				<div class="card">
+				<!-- <div class="card">
 					<div class="card-header" id="headingTres">
 						<h5 class="mb-0">
 							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTres"
@@ -195,7 +296,7 @@
 							</form>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>

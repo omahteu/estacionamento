@@ -1,23 +1,26 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Estacionamento</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="keywords"
+		content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FreeHTML5.co" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="../fonts/icomoon/fav.ico">
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -36,8 +39,9 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-	</head>
-	<body>
+</head>
+
+<body>
 	<div id="fh5co-page">
 		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
 		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
@@ -104,7 +108,7 @@
 				</div>
 			</div> -->
 			<div class="fh5co-narrow-content animate-box" data-animate-effect="fadeInLeft">
-				
+
 				<div class="row">
 					<div class="col-md-4">
 						<h2>Entradas</h2>
@@ -116,7 +120,8 @@
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" id="placa" placeholder="Placa" style="text-transform:uppercase">
+										<input type="text" class="form-control" id="placa" placeholder="Placa"
+											style="text-transform:uppercase">
 									</div>
 									<div class="form-group" id="tabelaCarroNovo">
 										<select name="" id="tipoVeiculo" class="form-control">
@@ -125,59 +130,6 @@
 											<option value="cp">Carro Pequeno</option>
 											<option value="mt">Moto</option>
 										</select>
-
-										<div class="card">
-											<div class="card-header" id="headingAjustes">
-												<h5 class="mb-0">
-													<button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseAjustes"
-														aria-expanded="false" aria-controls="collapseAjustes">
-														Ajustes de Tabela de Preços
-													</button>
-												</h5>
-											</div>
-											<div id="collapseAjustes" class="collapse" aria-labelledby="headingAjustes" data-parent="#accordion">
-												<div class="card-body">
-													<form>
-														<div class="row">
-															<div class="form-group">
-																<select name="" id="usafracao" class="form-control">
-																	<option value="" hidden>Ultilizar Fração</option>
-																	<option value="sim">Sim</option>
-																	<option value="nao">Não</option>
-																</select>
-															</div>
-															<div class="form-group">
-						
-																<select name="" id="tamanhoVeiculos" class="form-control">
-																	<option value="" hidden>Veículos</option>
-																	<option value="cg">Carro Grande</option>
-																	<option value="cp">Carro Pequeno</option>
-																	<option value="mt">Moto</option>
-																</select>
-															</div>
-															<div class="form-group">
-																<input type="text" class="form-control" id="valorHora" placeholder="Valor Hora">
-															</div>
-															<div class="form-group">
-																<input type="text" class="form-control" id="valorDiaria" placeholder="Valor Diária">
-															</div>
-															<div class="form-group">
-																<input type="text" class="form-control" id="valorFracao" placeholder="Valor Fração">
-															</div>
-														</div>
-						
-														<!-- <div class="row">
-															<div class="col">
-																<input type="button" id="registraPreco" class="tarjaVerde" value="Salvar">
-															</div>
-															<div class="col">
-																<input type="button" onclick="limpar()" class="tarjaVermelha" value="Limpar">
-															</div>
-														</div> -->
-													</form>
-												</div>
-											</div>
-										</div>
 									</div>
 									<!-- <div class="form-group">
 										<input type="text" class="form-control" placeholder="Phone">
@@ -188,15 +140,15 @@
 										<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
 									</div> -->
 									<div class="form-group">
-										<input type="button" class="btn btn-primary btn-md" id="registrar" value="Registrar">
+										<input type="button" class="btn btn-primary btn-md" id="registrar"
+											value="Registrar">
 									</div>
-								</div>			
+								</div>
 							</div>
-						</div>	
+						</div>
 					</div>
 				</form>
 			</div>
-			<!-- <div id="map"></div>	 -->
 		</div>
 	</div>
 
@@ -210,17 +162,14 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Flexslider -->
 	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
 	
-	
+
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
 
 	<script src="tabelas/mensalista.js"></script>
 	<script src="tabelas/ajustes.js"></script>
 
-	</body>
-</html>
+</body>
 
+</html>

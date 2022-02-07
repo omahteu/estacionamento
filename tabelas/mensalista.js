@@ -1,7 +1,27 @@
 var valorMensal = 50
 var diaria = 20
 var hora = 8
-var placas = ['abc1d23', 'b']
+var placas = ['a', 'b']
+
+
+function dataAtual() {
+    var horaEntrada = new Date();
+    var dia = horaEntrada.getDate()
+    var mes = horaEntrada.getMonth()
+    var ano = horaEntrada.getFullYear()
+
+    var data = dia + '/' + mes + '/' + ano
+    return data
+}
+
+function horaAtual() {
+    var horaEntrada = new Date();
+    var hora = horaEntrada.getHours()
+    var minutos = horaEntrada.getMinutes()
+
+    var hora = hora + ':' + minutos
+    return hora
+}
 
 function dataHora() {
     var horaEntrada = new Date();
@@ -18,12 +38,17 @@ function dataHora() {
 $("#registrar").click(function(){
     var placa = $("#placa").val()
     var dt = dataHora()
+    var hora_atual = horaAtual()
+    var data_atual = dataAtual()
+
     if(placas.includes(placa)) {
 
         var dado = {
             placa: placa,
             tabela: "Mensalidade",
-            entrada: dt
+            entrada: dt,
+            hora: hora_atual,
+            data: data_atual
         }
 
         if(localStorage.getItem('patio') === null){
@@ -51,4 +76,3 @@ $("#registrar").click(function(){
     }
 
 })
-

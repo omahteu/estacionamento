@@ -9,11 +9,13 @@ $(document).ready(function(){
         var placa = dados[i].placa
         var tabela = dados[i].tabela
         var entrada = dados[i].entrada
+        var data = dados[i].data
+        var hora = dados[i].hora
 
         garagem.innerHTML += '<tr>'+
-                                '<td>' + entrada + '</td>'+
+                                '<td>' + data + '</td>'+
                                 '<td>' + 'Mauro' + '</td>'+
-                                '<td>' + entrada + '</td>'+
+                                '<td>' + hora + '</td>'+
                                 '<td>' + tabela + '</td>'+
                                 '<td>' + placa + '</td>'+
                                 '<td><button onclick="removeProduto('+ placa +')" class="btn btn-danger">Encerrar</button></td>'+

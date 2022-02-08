@@ -1,9 +1,10 @@
+
+
 var valorMensal = 50
 var diaria = 20
 var hora = 8
 var placas = ['a', 'b']
 var tabelas = ['cg', 'cp', 'mt']
-
 
 function dataAtual() {
     var horaEntrada = new Date();
@@ -109,4 +110,6 @@ function armazenamento(dado) {
     alert("Veículo Registrado!")
 
     document.getElementById('registroPlacas').reset()
+
+
 }

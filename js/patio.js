@@ -20,7 +20,7 @@ $(document).ready(function(){
                                         '</div>'+
                                     '</div>'+
                                     '<div class="card-body pt-0 p-3 text-center">'+
-                                        '<h6 class="text-center mb-0">' + hora+ '</h6>'+
+                                        '<h6 class="text-center mb-0"><span id="minuto">00</span><span>:</span><span id="segundo">00</span></h6>'+
                                         '<span class="text-xs">' + tabela + '</span>'+
                                         '<hr class="horizontal dark my-3">'+
                                         '<h5 class="mb-0">' + placa + '</h5>'+

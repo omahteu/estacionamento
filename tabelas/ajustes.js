@@ -1,8 +1,8 @@
-$('#tipoVeiculo').change(function() {
-    var option = $('#tipoVeiculo').find(":selected").val();
+// $('#tipoVeiculo').change(function() {
+//     var option = $('#tipoVeiculo').find(":selected").val();
 
     
 
-    console.log(option)
+//     console.log(option)
 
-});
+// });

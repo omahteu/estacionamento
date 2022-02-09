@@ -59,13 +59,13 @@
 
 				<h2 class="titulo" >Usuários</h2>
 
-				<form action="">
+				<form id="formUsuarios">
 					<div class="row">
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Usuário">
+							<input type="text" class="form-control" id="usuario" placeholder="Usuário">
 						</div>
 						<div class="form-group">
-							<select name="" id="" class="form-control">
+							<select name="" id="permissao" class="form-control">
 								<option value="" hidden>Permissão</option>
 								<option value="">Caixa</option>
 								<option value="">Gerência</option>
@@ -75,32 +75,28 @@
 
 					<div class="row">
 						<div class="col">
-							<input type="button" class="tarjaVerde" value="Salvar">
+							<input type="button" class="tarjaVerde" id="salvarUsuario" value="Salvar">
 						</div>
 						<div class="col">
-							<input type="button" class="tarjaVermelha" value="Limpar">
+							<input type="button" class="tarjaVermelha" id="limparUsuario" value="Limpar">
 						</div>
 					</div>
 				</form>
 
 				<h2 class="titulo" >Mensalistas</h2>
 			
-
 				<form action="">
 					<div class="row">
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Nome">
+							<input type="text" class="form-control" id="nome" placeholder="Nome">
 						</div>
 						<div class="form-group" id="placas">
-							<input type="text" class="form-control" placeholder="Placa">
+							<input type="text" class="form-control" id="placa" placeholder="Placa">
 						</div>
 						<div id="box" class="form-group">
 
 						</div>
 						<button type="button" id="add" class="add">+ Placa</button>
-						<!-- <div class="form-group">
-					<input type="text" class="form-control" placeholder="Valor">
-				</div> -->
 
 						<div class="form-group">
 							<label>Data Vencimento Mensalidade</label>
@@ -110,7 +106,7 @@
 
 					<div class="row">
 						<div class="col">
-							<input type="button" class="tarjaVerde" value="Salvar">
+							<input type="button" class="tarjaVerde" id="salvarMensalistas" value="Salvar">
 						</div>
 						<div class="col">
 							<input type="button" class="tarjaVermelha" value="Limpar">
@@ -323,6 +319,10 @@
 	<script src="../js/campos.js"></script>
 
 	<script src="../tabelas/precos.js"></script>
+
+	<script src="../cadastros/usuarios.js"></script>
+
+	<script src="../cadastros/mensalistas.js"></script>
 
 </body>
 
